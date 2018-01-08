@@ -11,7 +11,7 @@ Resolve DNS records via the [Google Public DNS HTTPS API](https://dns.google.com
 ## Installation
 
 ```
-yarn install dns-over-https
+yarn add dns-over-https
 ```
 
 ## Usage
