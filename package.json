@@ -2,7 +2,14 @@
   "name": "dns-over-https",
   "version": "0.0.0",
   "description": "Resolve DNS records via the Google Public DNS HTTPS API",
-  "tags": ["dns", "https", "resolve", "google", "google dns", "google public dns"],
+  "keywords": [
+    "dns",
+    "https",
+    "resolve",
+    "google",
+    "public",
+    "proxy"
+  ],
   "main": "index.js",
   "repository": "https://github.com/buschtoens/dns-over-https",
   "author": "Jan Buschtöns <jan@buschtoens.me> (https://jan.buschtoens.me/)",
@@ -24,10 +31,13 @@
     "prettier": "^1.9.2"
   },
   "dependencies": {
+    "env-proxy-agent": "^0.1.0",
     "get-stream": "^3.0.0"
   },
   "ava": {
-    "require": ["@std/esm"]
+    "require": [
+      "@std/esm"
+    ]
   },
   "@std/esm": "cjs"
 }
