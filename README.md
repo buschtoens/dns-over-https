@@ -18,7 +18,6 @@ yarn add dns-over-https
 
 ```js
 import resolveRecord from 'dns-over-https';
-import caw from 'caw';
 
 (async () => {
   const a = await resolveRecord('google.com'); // resolves for A records
@@ -35,9 +34,7 @@ import caw from 'caw';
     },
 
     // allows you to pass additional request options
-    requestOptions: {
-      agent: caw({ protocol: 'https' }) // enables proxy support
-    }
+    requestOptions: {}
   });
 })();
 ```
